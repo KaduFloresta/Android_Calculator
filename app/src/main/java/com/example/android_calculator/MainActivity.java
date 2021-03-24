@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView InputValue1;
-    TextView InputValue2;
-    TextView Result;
+    TextView inputValue1;
+    TextView inputValue2;
+    TextView result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                InputValue1 = (TextView) findViewById(R.id.value1);
-                InputValue2 = (TextView) findViewById(R.id.value2);
-                Result = (TextView) findViewById(R.id.txtResult);
-                float value1 = Float.parseFloat(InputValue1.getText().toString());
-                float value2 = Float.parseFloat(InputValue2.getText().toString());
-                Result.setText(String.valueOf(value1+value2));
+                inputValue1 = (TextView) findViewById(R.id.value1);
+                inputValue2 = (TextView) findViewById(R.id.value2);
+                result = (TextView) findViewById(R.id.txtResult);
+                float value1 = Float.parseFloat(inputValue1.getText().toString());
+                float value2 = Float.parseFloat(inputValue2.getText().toString());
+                result.setText(String.valueOf(value1 + value2));
             }
         };
     }
@@ -51,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                InputValue1 = (TextView) findViewById(R.id.value1);
-                InputValue2 = (TextView) findViewById(R.id.value2);
-                Result = (TextView) findViewById(R.id.txtResult);
-                float value1 = Float.parseFloat(InputValue1.getText().toString());
-                float value2 = Float.parseFloat(InputValue2.getText().toString());
-                Result.setText(String.valueOf(value1-value2));
+                inputValue1 = (TextView) findViewById(R.id.value1);
+                inputValue2 = (TextView) findViewById(R.id.value2);
+                result = (TextView) findViewById(R.id.txtResult);
+                float value1 = Float.parseFloat(inputValue1.getText().toString());
+                float value2 = Float.parseFloat(inputValue2.getText().toString());
+                result.setText(String.valueOf(value1 - value2));
             }
         };
     }
@@ -66,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                InputValue1 = (TextView) findViewById(R.id.value1);
-                InputValue2 = (TextView) findViewById(R.id.value2);
-                Result = (TextView) findViewById(R.id.txtResult);
-                float value1 = Float.parseFloat(InputValue1.getText().toString());
-                float value2 = Float.parseFloat(InputValue2.getText().toString());
-                Result.setText(String.valueOf(value1*value2));
+                inputValue1 = (TextView) findViewById(R.id.value1);
+                inputValue2 = (TextView) findViewById(R.id.value2);
+                result = (TextView) findViewById(R.id.txtResult);
+                float value1 = Float.parseFloat(inputValue1.getText().toString());
+                float value2 = Float.parseFloat(inputValue2.getText().toString());
+                result.setText(String.valueOf(value1 * value2));
             }
         };
     }
@@ -81,12 +82,12 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                InputValue1 = (TextView) findViewById(R.id.value1);
-                InputValue2 = (TextView) findViewById(R.id.value2);
-                Result = (TextView) findViewById(R.id.txtResult);
-                float value1 = Float.parseFloat(InputValue1.getText().toString());
-                float value2 = Float.parseFloat(InputValue2.getText().toString());
-                Result.setText(String.valueOf(value1 / value2));
+                inputValue1 = (TextView) findViewById(R.id.value1);
+                inputValue2 = (TextView) findViewById(R.id.value2);
+                result = (TextView) findViewById(R.id.txtResult);
+                float value1 = Float.parseFloat(inputValue1.getText().toString());
+                float value2 = Float.parseFloat(inputValue2.getText().toString());
+                result.setText(String.valueOf(value1 / value2));
             }
         };
     }
