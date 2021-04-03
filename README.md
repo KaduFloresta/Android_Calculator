@@ -46,3 +46,8 @@ Disponibilizar o projeto no GitHub e enviar o link de acesso.
 - [ ] Resultado < 100 = Smile Triste.
 
 ---
+
+# Print do Aplicativo
+ 
+ <img src="https://github.com/KaduFloresta/Android_Calculator/blob/master/app/src/main/res/drawable/print.png"/>
+
